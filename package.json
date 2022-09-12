@@ -1,0 +1,21 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation Développeur Web de la plateforme OpenClassrooms.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/style.css",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cardon-a/OC_projet-3.git"
+  },
+  "author": "cardon-a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cardon-a/OC_projet-3/issues"
+  },
+  "homepage": "https://github.com/cardon-a/OC_projet-3#readme",
+  "browserslist": "last 4 versions"
+}
