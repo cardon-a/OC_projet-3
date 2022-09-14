@@ -9,4 +9,23 @@ html {
   display: flex;
 }
 
+.header { /* Partie Header */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.header_btn {
+  /* display: none;*/
+  position: absolute;
+  left: 0;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+}
+.header_img {
+  margin-top: 10px;
+  width: 50%;
+  min-width: 80px;
+}
+
 /*# sourceMappingURL=style.css.map */

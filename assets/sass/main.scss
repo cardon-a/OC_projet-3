@@ -1,6 +1,8 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
+$light_grey:#deebff;
+$white:#fff;
 
 html{
     box-sizing: border-box;
@@ -9,4 +11,23 @@ html{
 
 .flex{
     display: flex;
+}
+
+.header{        /* Partie Header */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    &_btn{
+       /* display: none;*/
+        position: absolute;
+        left: 0;
+        border: none;
+        background-color: $white;
+        font-size: 20px;
+    }
+    &_img{
+        margin-top: 10px;
+        width: 50%;
+        min-width: 80px;
+    }
 }
