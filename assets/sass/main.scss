@@ -1,7 +1,7 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
-$light_grey:#deebff;
+$light_grey:#b5b5b5;
 $white:#fff;
 
 html{
@@ -16,10 +16,13 @@ html{
 body{
     margin: 0;
 }
+
 .header{        /* Partie Header */
     position: relative;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 10px;
+    box-shadow: 0 0 15px $light_grey;
     &_btn{
        /* display: none;*/
         position: absolute;
@@ -29,7 +32,6 @@ body{
         font-size: 20px;
     }
     &_img{
-        margin-top: 10px;
         width: 50%;
         min-width: 80px;
     }

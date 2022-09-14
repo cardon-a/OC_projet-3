@@ -17,6 +17,8 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  padding: 20px 0 10px;
+  box-shadow: 0 0 15px #b5b5b5;
 }
 .header_btn {
   /* display: none;*/
@@ -27,7 +29,6 @@ body {
   font-size: 20px;
 }
 .header_img {
-  margin-top: 10px;
   width: 50%;
   min-width: 80px;
 }
