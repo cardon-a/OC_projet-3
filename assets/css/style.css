@@ -52,6 +52,7 @@ body {
   align-items: center;
   text-align: center;
   background-color: #f5f5f5;
+  padding-bottom: 70px;
 }
 .explore_title {
   margin: 50px 0 10px 0;
@@ -67,13 +68,47 @@ body {
   background: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
   border: none;
   border-radius: 50px;
-  margin-bottom: 70px;
   box-shadow: 0 5px 10px #bbbbbb;
 }
 .explore_btn_text {
   font-size: 25px;
   color: #fff;
   padding: 0 25px;
+}
+
+.function { /* Partie Fonctionnement */
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 35px;
+}
+.function_title {
+  font-size: 35px;
+}
+.function_card {
+  margin-left: 20px;
+  max-width: 650px;
+  align-items: center;
+  border-radius: 25px;
+  margin-right: 20px;
+  background-color: #f5f5f5;
+  gap: 30px;
+  box-shadow: 0 5px 10px #bbbbbb;
+}
+.function_card_num {
+  margin-left: -20px;
+  background-color: #9356DC;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 11px;
+  text-align: center;
+  border-radius: 100%;
+}
+.function_card_icn {
+  font-size: 30px;
+  color: #5c5c5c;
+}
+.function_card_text {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -57,6 +57,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: $ultra_light_grey;
+    padding-bottom: 70px;
     &_title{
         margin: 50px 0 10px 0;
         font-size: 35px;
@@ -71,12 +72,45 @@ body{
         background: linear-gradient(170deg, $pink 5%, $purple 80%);
         border: none;
         border-radius: 50px;
-        margin-bottom: 70px;
         box-shadow: 0 5px 10px $grey;
         &_text{
             font-size: 25px;
             color: $white;
             padding: 0 25px;
+        }
+    }
+}
+.function{      /* Partie Fonctionnement */
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 35px;
+    &_title{
+        font-size: 35px;
+    }
+    &_card{
+        margin-left: 20px;
+        max-width: 650px;
+        align-items: center;
+        border-radius: 25px;
+        margin-right: 20px;
+        background-color: $ultra_light_grey;
+        gap: 30px;
+        box-shadow: 0 5px 10px $grey;
+        &_num{
+            margin-left: -20px;
+            background-color: $purple;
+            font-size: 20px;
+            color: $white;
+            padding: 5px 11px;
+            text-align: center;
+            border-radius: 100%;
+        }
+        &_icn{
+            font-size: 30px;
+            color: $dark_grey;
+        }
+        &_text{
+            font-size: 25px;
         }
     }
 }
