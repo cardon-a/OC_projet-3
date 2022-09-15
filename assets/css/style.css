@@ -68,6 +68,7 @@ body {
   border: none;
   border-radius: 50px;
   margin-bottom: 70px;
+  box-shadow: 0 5px 10px #bbbbbb;
 }
 .explore_btn_text {
   font-size: 25px;
