@@ -1,11 +1,10 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
-$dark_grey:#5c5c5c;
 $grey:#bbbbbb;
-$light_grey:#ebebeb;
-$ultra_light_grey:#f5f5f5;
 $white:#fff;
+
+$between_section: 70px;
 
 html{
     box-sizing: border-box;
@@ -41,13 +40,13 @@ body{
 .location{      /* Partie Localisation */
     align-items: center;
     justify-content: center;
-    background-color: $light_grey;
+    background-color: lighten($grey, 15%);
     &_icn{
         margin-right: 25px;
         font-size: 25px;
     }
     &_p{
-        color: $dark_grey;
+        color: darken(grey, 10%);
         font-weight: 600;
         font-size: 25px;
     }
@@ -56,8 +55,8 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: $ultra_light_grey;
-    padding-bottom: 70px;
+    background-color: lighten($grey, 20%);
+    padding-bottom: $between_section;
     &_title{
         margin: 50px 0 10px 0;
         font-size: 35px;
@@ -66,7 +65,7 @@ body{
     &_text{
         margin: 0 0 50px;
         font-size: 25px;
-        color: $dark_grey;
+        color: darken(grey, 10%);
     }
     &_btn{
         background: linear-gradient(170deg, $pink 5%, $purple 80%);
@@ -84,7 +83,10 @@ body{
     flex-direction: column;
     margin-left: 20px;
     gap: 35px;
+    margin-top: $between_section;
+    margin-bottom: $between_section;
     &_title{
+        margin: 0;
         font-size: 35px;
     }
     &_card{
@@ -93,7 +95,7 @@ body{
         align-items: center;
         border-radius: 25px;
         margin-right: 20px;
-        background-color: $ultra_light_grey;
+        background-color: lighten($grey, 20%);
         gap: 30px;
         box-shadow: 0 5px 10px $grey;
         &_num{
@@ -107,10 +109,16 @@ body{
         }
         &_icn{
             font-size: 30px;
-            color: $dark_grey;
+            color: darken($grey, 10%);
         }
         &_text{
             font-size: 25px;
         }
+    }
+}
+.third-card{
+    background-color: lighten($purple, 30%);
+    &_icn{
+        color: $purple;
     }
 }
