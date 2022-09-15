@@ -1,8 +1,10 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
+$dark_grey:#5c5c5c;
 $grey:#bbbbbb;
-$light_grey:#f5f5f5;
+$light_grey:#ebebeb;
+$ultra_light_grey:#f5f5f5;
 $white:#fff;
 
 html{
@@ -23,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px 0 10px;
-    box-shadow: 0 0 10px $grey;
+    box-shadow: 0 0 15px $grey;
     &_btn{
         display: none;
         position: absolute;
@@ -45,6 +47,35 @@ body{
         font-size: 25px;
     }
     &_p{
+        color: $dark_grey;
+        font-weight: 600;
         font-size: 25px;
+    }
+}
+.explore{       /* Partie Explorer nos restaurants */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $ultra_light_grey;
+    &_title{
+        margin: 50px 0 10px 0;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &_text{
+        margin: 0 0 50px;
+        font-size: 25px;
+        color: $dark_grey;
+    }
+    &_btn{
+        background: linear-gradient(170deg, $pink 5%, $purple 80%);
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 70px;
+        &_text{
+            font-size: 25px;
+            color: $white;
+            padding: 0 25px;
+        }
     }
 }
