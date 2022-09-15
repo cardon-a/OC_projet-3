@@ -1,7 +1,8 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
-$light_grey:#b5b5b5;
+$grey:#bbbbbb;
+$light_grey:#f5f5f5;
 $white:#fff;
 
 html{
@@ -22,9 +23,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px 0 10px;
-    box-shadow: 0 0 15px $light_grey;
+    box-shadow: 0 0 10px $grey;
     &_btn{
-       /* display: none;*/
+        display: none;
         position: absolute;
         left: 0;
         border: none;
@@ -32,7 +33,18 @@ body{
         font-size: 20px;
     }
     &_img{
-        width: 50%;
-        min-width: 80px;
+        width: 250px;
+    }
+}
+.location{      /* Partie Localisation */
+    align-items: center;
+    justify-content: center;
+    background-color: $light_grey;
+    &_icn{
+        margin-right: 25px;
+        font-size: 25px;
+    }
+    &_p{
+        font-size: 25px;
     }
 }
