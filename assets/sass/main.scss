@@ -73,11 +73,9 @@ body{
         border: none;
         border-radius: 50px;
         box-shadow: 0 5px 10px $grey;
-        &_text{
-            font-size: 25px;
-            color: $white;
-            padding: 0 25px;
-        }
+        font-size: 25px;
+        color: $white;
+        padding: 25px;
     }
 }
 .function{      /* Partie Fonctionnement */
@@ -173,7 +171,7 @@ body{
             &_location{
                 margin: 0;
                 font-size: 25px;
-                font-weight: thin;
+                font-weight: 100;
             }
             &_icn{
                 font-size: 30px;

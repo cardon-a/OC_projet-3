@@ -69,11 +69,9 @@ body {
   border: none;
   border-radius: 50px;
   box-shadow: 0 5px 10px #bbbbbb;
-}
-.explore_btn_text {
   font-size: 25px;
   color: #fff;
-  padding: 0 25px;
+  padding: 25px;
 }
 
 .function { /* Partie Fonctionnement */
@@ -174,7 +172,7 @@ body {
 .restaurant_card_text_location {
   margin: 0;
   font-size: 25px;
-  font-weight: thin;
+  font-weight: 100;
 }
 .restaurant_card_text_icn {
   font-size: 30px;
