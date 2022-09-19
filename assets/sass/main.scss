@@ -1,12 +1,5 @@
-$aqua:#99E2D0;  /* Déclaration des couleurs */
-$pink:#FF79DA;
-$purple:#9356DC;
-$grey:#b5b5b5;
-$white:#fff;
-$black:#000;
-
-$font_size: (title:35px, text:25px, icn:30px, new-text:20px, foooter-icn:18px, footer-title:35px, footer-text:20px);
-$between_section: 70px;
+@import "./common/variables";
+@import "./common/buttons";
 
 html{
     box-sizing: border-box;
@@ -47,7 +40,7 @@ body{
         margin-right: 25px;
         font-size: map-get($font_size, text);
     }
-    &_p{
+    &_text{
         color: darken(grey, 10%);
         font-weight: 600;
         font-size: map-get($font_size, text);
@@ -70,19 +63,7 @@ body{
         color: darken(grey, 10%);
     }
     &_btn{
-        text-decoration: none;
-        background-image: linear-gradient(170deg, $pink 5%, $purple 80%);
-        border: none;
-        border-radius: 50px;
-        box-shadow: 0 5px 10px $grey;
-        font-size: map-get($font_size, text);
-        color: $white;
-        padding: 25px;
-        transition: box-shadow 250ms;
-        &:hover{
-            box-shadow: 0 5px 10px darken($grey, 20%);
-            background-image: linear-gradient(170deg, lighten($pink, 5%) 5%, lighten($purple, 5%) 80%);;
-        }
+        @include buttons;
     }
 }
 .function{      /* Partie Fonctionnement */
@@ -190,12 +171,12 @@ body{
                 width: 30px;
                 margin-right: 20px;
                 position: relative;
-                &--nbg{
+                &--empty{
                     position: absolute;
                     top: 0;
                     right: 0;
                 }
-                &--bg{
+                &--filled{
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -207,7 +188,7 @@ body{
 
                 }
                 &:hover{
-                    .restaurant_card_text_btn--bg{
+                    .restaurant_card_text_btn--filled{
                         opacity: 1;
                     }
                 }

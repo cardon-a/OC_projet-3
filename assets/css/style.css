@@ -41,7 +41,7 @@ body {
   margin-right: 25px;
   font-size: 25px;
 }
-.location_p {
+.location_text {
   color: #676767;
   font-weight: 600;
   font-size: 25px;
@@ -188,12 +188,12 @@ body {
   margin-right: 20px;
   position: relative;
 }
-.restaurant_card_text_btn--nbg {
+.restaurant_card_text_btn--empty {
   position: absolute;
   top: 0;
   right: 0;
 }
-.restaurant_card_text_btn--bg {
+.restaurant_card_text_btn--filled {
   position: absolute;
   top: 0;
   right: 0;
@@ -203,7 +203,7 @@ body {
   opacity: 0;
   transition: opacity 250ms;
 }
-.restaurant_card_text_btn:hover .restaurant_card_text_btn--bg {
+.restaurant_card_text_btn:hover .restaurant_card_text_btn--filled {
   opacity: 1;
 }
 

@@ -1,0 +1,15 @@
+@mixin buttons {
+    text-decoration: none;
+    background-image: linear-gradient(170deg, $pink 5%, $purple 80%);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px $grey;
+    font-size: map-get($font_size, text);
+    color: $white;
+    padding: 25px;
+    transition: box-shadow 250ms;
+    &:hover{
+        box-shadow: 0 5px 10px darken($grey, 20%);
+        background-image: linear-gradient(170deg, lighten($pink, 5%) 5%, lighten($purple, 5%) 80%);;
+    }
+}
