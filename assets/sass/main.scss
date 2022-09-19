@@ -5,6 +5,7 @@ $grey:#b5b5b5;
 $white:#fff;
 $black:#000;
 
+$font_size: (title:35px, text:25px, icn:30px, foooter-icn:18px, footer-title:35px, footer-text:20px);
 $between_section: 70px;
 
 html{
@@ -32,7 +33,7 @@ body{
         left: 0;
         border: none;
         background-color: $white;
-        font-size: 20px;
+        font-size: map-get($font_size, text);
     }
     &_img{
         width: 250px;
@@ -44,12 +45,12 @@ body{
     background-color: lighten($grey, 20%);
     &_icn{
         margin-right: 25px;
-        font-size: 25px;
+        font-size: map-get($font_size, text);
     }
     &_p{
         color: darken(grey, 10%);
         font-weight: 600;
-        font-size: 25px;
+        font-size: map-get($font_size, text);
     }
 }
 .explore{       /* Partie Explorer nos restaurants */
@@ -60,12 +61,12 @@ body{
     padding-bottom: $between_section;
     &_title{
         margin: 50px 0 10px 0;
-        font-size: 35px;
+        font-size: map-get($font_size, title);
         font-weight: bold;
     }
     &_text{
         margin: 0 0 50px;
-        font-size: 25px;
+        font-size: map-get($font_size, text);
         color: darken(grey, 10%);
     }
     &_btn{
@@ -74,7 +75,7 @@ body{
         border: none;
         border-radius: 50px;
         box-shadow: 0 5px 10px $grey;
-        font-size: 25px;
+        font-size: map-get($font_size, text);
         color: $white;
         padding: 25px;
         transition: box-shadow 250ms;
@@ -92,7 +93,7 @@ body{
     margin-bottom: $between_section;
     &_title{
         margin: 0;
-        font-size: 35px;
+        font-size: map-get($font_size, title);
         font-weight: bold;
     }
     &_card{
@@ -106,18 +107,18 @@ body{
         &_num{
             margin-left: -20px;
             background-color: $purple;
-            font-size: 20px;
+            font-size: map-get($font_size, text);
             color: $white;
             padding: 5px 11px;
             text-align: center;
             border-radius: 100%;
         }
         &_icn{
-            font-size: 30px;
+            font-size: map-get($font_size, icn);
             color: darken($grey, 10%);
         }
         &_text{
-            font-size: 25px;
+            font-size: map-get($font_size, text);
             font-weight: bold;
         }
     }
@@ -135,7 +136,7 @@ body{
     gap: 30px;
     &_title{
         margin: 0;
-        font-size: 35px;
+        font-size: map-get($font_size, title);
         font-weight: bold;
     }
     &_card{
@@ -161,7 +162,7 @@ body{
             padding: 10px;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 20px;
+            font-size: map-get($font_size, text);
         }
         &_text{
             justify-content: space-between;
@@ -172,15 +173,15 @@ body{
             &_title{
                 margin: 0;
                 font-weight: bold;
-                font-size: 25px;
+                font-size: map-get($font_size, text);
             }
             &_location{
                 margin: 0;
-                font-size: 25px;
+                font-size: map-get($font_size, text);
                 font-weight: 100;
             }
             &_btn{
-                font-size: 30px;
+                font-size: map-get($font_size, icn);
                 background-color: $white;
                 border: none;
                 height: 30px;
@@ -217,10 +218,11 @@ body{
     padding: 30px 0 30px 25px;
     color: $white;
     background-color: darken($grey, 50%);
-    font-size: 25px;
+    font-size: map-get($font_size, text);
     &_title{
         margin: 0 0 20px 0;
         font-family: 'Shrikhand', sans-serif;
+        font-size: map-get($font_size, footer-title);
     }
     &_list{
         flex-direction: column;
@@ -228,10 +230,11 @@ body{
         margin: 0;
         gap: 5px;
         list-style-type: none;
+        font-size: map-get($font_size, footer-text);
         &_elem{
             &_icn{
                 width: 25px;
-                font-size: 18px;
+                font-size: map-get($font_size, foooter-icn);
             }
             &_link{
                 text-decoration: none;

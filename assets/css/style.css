@@ -26,7 +26,7 @@ body {
   left: 0;
   border: none;
   background-color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 .header_img {
   width: 250px;
@@ -104,7 +104,7 @@ body {
 .function_card_num {
   margin-left: -20px;
   background-color: #9356DC;
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
   padding: 5px 11px;
   text-align: center;
@@ -161,7 +161,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .restaurant_card_text {
   justify-content: space-between;
@@ -218,6 +218,7 @@ body {
 .footer_title {
   margin: 0 0 20px 0;
   font-family: "Shrikhand", sans-serif;
+  font-size: 35px;
 }
 .footer_list {
   flex-direction: column;
@@ -225,6 +226,7 @@ body {
   margin: 0;
   gap: 5px;
   list-style-type: none;
+  font-size: 20px;
 }
 .footer_list_elem_icn {
   width: 25px;
