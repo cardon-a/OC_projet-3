@@ -176,16 +176,25 @@ body{
                 font-size: 30px;
                 background-color: $white;
                 border: none;
+                height: 30px;
+                width: 30px;
+                margin-right: 20px;
+                position: relative;
                 &--nbg{
+                    position: absolute;
                     top: 0;
+                    right: 0;
                 }
                 &--bg{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
                     background: linear-gradient(170deg, $pink 5%, $purple 80%);
                     background-clip: text;
                     color: transparent;
                     opacity: 0;
                     transition: opacity 250ms;
-                    top: 0;
+
                 }
                 &:hover{
                     .restaurant_card_text_btn--bg{

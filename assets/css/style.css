@@ -177,17 +177,25 @@ body {
   font-size: 30px;
   background-color: #fff;
   border: none;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  position: relative;
 }
 .restaurant_card_text_btn--nbg {
+  position: absolute;
   top: 0;
+  right: 0;
 }
 .restaurant_card_text_btn--bg {
+  position: absolute;
+  top: 0;
+  right: 0;
   background: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
   background-clip: text;
   color: transparent;
   opacity: 0;
   transition: opacity 250ms;
-  top: 0;
 }
 .restaurant_card_text_btn:hover .restaurant_card_text_btn--bg {
   opacity: 1;
