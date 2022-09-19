@@ -1,7 +1,7 @@
 $aqua:#99E2D0;  /* Déclaration des couleurs */
 $pink:#FF79DA;
 $purple:#9356DC;
-$grey:#bbbbbb;
+$grey:#b5b5b5;
 $white:#fff;
 $black:#000;
 
@@ -41,7 +41,7 @@ body{
 .location{      /* Partie Localisation */
     align-items: center;
     justify-content: center;
-    background-color: lighten($grey, 15%);
+    background-color: lighten($grey, 20%);
     &_icn{
         margin-right: 25px;
         font-size: 25px;
@@ -56,7 +56,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: lighten($grey, 20%);
+    background-color: lighten($grey, 25%);
     padding-bottom: $between_section;
     &_title{
         margin: 50px 0 10px 0;
@@ -69,13 +69,19 @@ body{
         color: darken(grey, 10%);
     }
     &_btn{
-        background: linear-gradient(170deg, $pink 5%, $purple 80%);
+        text-decoration: none;
+        background-image: linear-gradient(170deg, $pink 5%, $purple 80%);
         border: none;
         border-radius: 50px;
         box-shadow: 0 5px 10px $grey;
         font-size: 25px;
         color: $white;
         padding: 25px;
+        transition: box-shadow 250ms;
+        &:hover{
+            box-shadow: 0 5px 10px darken($grey, 20%);
+            background-image: linear-gradient(170deg, lighten($pink, 5%) 5%, lighten($purple, 5%) 80%);;
+        }
     }
 }
 .function{      /* Partie Fonctionnement */
@@ -94,7 +100,7 @@ body{
         max-width: 650px;
         align-items: center;
         border-radius: 25px;
-        background-color: lighten($grey, 20%);
+        background-color: lighten($grey, 25%);
         gap: 30px;
         box-shadow: 0 5px 10px $grey;
         &_num{
@@ -124,9 +130,9 @@ body{
 }
 .restaurant{    /* Partie Menu */
     flex-direction: column;
-    background-color: lighten($grey, 20%);
+    background-color: lighten($grey, 25%);
     padding: $between_section 20px;
-    gap: 20px;
+    gap: 30px;
     &_title{
         margin: 0;
         font-size: 35px;
@@ -143,6 +149,7 @@ body{
             position: relative;
             width: 100%;
             height: 220px;
+            object-fit: cover;
         }
         &_new{
             position: absolute;

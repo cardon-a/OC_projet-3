@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px 0 10px;
-  box-shadow: 0 0 15px #bbbbbb;
+  box-shadow: 0 0 15px #b5b5b5;
 }
 .header_btn {
   display: none;
@@ -35,7 +35,7 @@ body {
 .location { /* Partie Localisation */
   align-items: center;
   justify-content: center;
-  background-color: #e1e1e1;
+  background-color: #e8e8e8;
 }
 .location_icn {
   margin-right: 25px;
@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   padding-bottom: 70px;
 }
 .explore_title {
@@ -65,13 +65,19 @@ body {
   color: #676767;
 }
 .explore_btn {
-  background: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
   border: none;
   border-radius: 50px;
-  box-shadow: 0 5px 10px #bbbbbb;
+  box-shadow: 0 5px 10px #b5b5b5;
   font-size: 25px;
   color: #fff;
   padding: 25px;
+  transition: box-shadow 250ms;
+}
+.explore_btn:hover {
+  box-shadow: 0 5px 10px #828282;
+  background-image: linear-gradient(170deg, #ff93e1 5%, #a16be0 80%);
 }
 
 .function { /* Partie Fonctionnement */
@@ -91,9 +97,9 @@ body {
   max-width: 650px;
   align-items: center;
   border-radius: 25px;
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   gap: 30px;
-  box-shadow: 0 5px 10px #bbbbbb;
+  box-shadow: 0 5px 10px #b5b5b5;
 }
 .function_card_num {
   margin-left: -20px;
@@ -106,7 +112,7 @@ body {
 }
 .function_card_icn {
   font-size: 30px;
-  color: #a2a2a2;
+  color: #9c9c9c;
 }
 .function_card_text {
   font-size: 25px;
@@ -122,9 +128,9 @@ body {
 
 .restaurant { /* Partie Menu */
   flex-direction: column;
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   padding: 70px 20px;
-  gap: 20px;
+  gap: 30px;
 }
 .restaurant_title {
   margin: 0;
@@ -143,6 +149,7 @@ body {
   position: relative;
   width: 100%;
   height: 220px;
+  object-fit: cover;
 }
 .restaurant_card_new {
   position: absolute;
@@ -205,7 +212,7 @@ body {
   flex-direction: column;
   padding: 30px 0 30px 25px;
   color: #fff;
-  background-color: #3c3c3c;
+  background-color: #363636;
   font-size: 25px;
 }
 .footer_title {
