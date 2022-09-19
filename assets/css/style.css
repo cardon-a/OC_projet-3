@@ -176,9 +176,10 @@ body {
 .restaurant_card_text_btn {
   font-size: 30px;
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
   border: none;
+}
+.restaurant_card_text_btn--nbg {
+  top: 0;
 }
 .restaurant_card_text_btn--bg {
   background: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
@@ -186,6 +187,7 @@ body {
   color: transparent;
   opacity: 0;
   transition: opacity 250ms;
+  top: 0;
 }
 .restaurant_card_text_btn:hover .restaurant_card_text_btn--bg {
   opacity: 1;
