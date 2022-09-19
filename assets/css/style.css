@@ -118,11 +118,10 @@ body {
   font-size: 25px;
   font-weight: bold;
 }
-
-.third-card { /* Changement de couleur sur la 3ème Card de Fonctionnement */
+.function_card:hover {
   background-color: #e4d5f6;
 }
-.third-card_icn {
+.function_card:hover .function_card_icn {
   color: #9356DC;
 }
 
@@ -161,7 +160,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 .restaurant_card_text {
   justify-content: space-between;
