@@ -157,9 +157,8 @@ body {
   font-size: 20px;
 }
 .restaurant_card_text {
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 20px;
   height: 80px;
   color: #000;
@@ -174,11 +173,22 @@ body {
   font-size: 25px;
   font-weight: 100;
 }
-.restaurant_card_text_icn {
+.restaurant_card_text_btn {
   font-size: 30px;
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.restaurant_card_text_btn--bg {
+  background: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.restaurant_card_text_btn:hover .restaurant_card_text_btn--bg {
+  opacity: 1;
 }
 
 .footer { /* Partie Footer */
