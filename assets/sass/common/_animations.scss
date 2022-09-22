@@ -17,7 +17,11 @@
 } 
 
 @keyframes loader {
+    50% {
+        opacity: 0;
+    }
     100% {
         opacity: 0;
+        z-index: -10;
     }
 }
