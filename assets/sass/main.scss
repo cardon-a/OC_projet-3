@@ -50,12 +50,18 @@ body{
             &--2{
                 animation: rotation_inv 1s linear infinite;
                 border-color: $purple $purple transparent transparent;
-                scale: 0.8;
+                height: 80px;
+                width: 80px;
+                left: -40px;
+                top: 10px;
             }
             &--3{
                 animation: rotation 1s linear infinite;
                 border-color: transparent transparent $aqua $aqua;
-                scale: 0.6;
+                height: 60px;
+                width: 60px;
+                left: -30px;
+                top: 20px;
             }
         }
     }
