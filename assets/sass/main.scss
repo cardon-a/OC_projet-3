@@ -1,5 +1,6 @@
 @import "./common/variables";
 @import "./common/buttons";
+@import "./common/animations";
 
 html{
     box-sizing: border-box;
@@ -13,6 +14,54 @@ html{
 body{
     margin: 0;
 }
+
+.loader{
+    position: fixed;
+    background-color: $white;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: loader 1s both;
+    animation-delay: 2s;
+    &_title{
+        font-family: "Shrikhand", sans-serif;
+        font-size: map-get($font_size, title);
+
+    }
+    &_spinner{
+        position: relative;
+        padding-bottom: 100px;
+        &_item{
+            position: absolute;
+            border-radius: 50%;
+            left: -50px;
+            height: 100px;
+            width: 100px;
+            border: 6px solid;
+            &--1{
+                animation: rotation 1s linear infinite;
+                border-color: transparent transparent $pink $pink;
+
+            }
+            &--2{
+                animation: rotation_inv 1s linear infinite;
+                border-color: $purple $purple transparent transparent;
+                scale: 0.8;
+            }
+            &--3{
+                animation: rotation 1s linear infinite;
+                border-color: transparent transparent $aqua $aqua;
+                scale: 0.6;
+            }
+        }
+    }
+}
+
+
 
 .header{        /* Partie Header */
     position: relative;
