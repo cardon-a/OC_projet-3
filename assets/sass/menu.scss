@@ -1,3 +1,117 @@
 @import "./common/variables";
 @import "./common/buttons";
 
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    margin: 0;
+}
+
+.header{        /* Partie Header */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 10px;
+    box-shadow: 0 0 15px $grey;
+    &_btn{
+        position: absolute;
+        left: 10px;
+        color: $black;
+        font-size: map-get($font_size, icn);
+    }
+    &_img{
+        width: 250px;
+    }
+}
+.menu{
+    &_img{
+        width: 100%;
+        max-height: 350px;
+    }
+    flex-direction: column;
+    padding: 0 30px;
+    background-color: lighten($grey, 25%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: -40px;
+    &_title{
+        justify-content: space-between;
+        align-items: center;
+        &_text{
+            font-family: Shrikhand, sans-serif;
+            font-size: map-get($font_size, title);
+        }
+        &_like{
+            font-size: map-get($font_size, icn);
+            height: 30px;
+            width: 30px;
+            margin-right: 20px;
+            position: relative;
+            &--empty{
+                position: absolute;
+                top: 0;
+                right: 10px;
+            }
+            &--filled{
+                position: absolute;
+                top: 0;
+                right: 10px;
+                background: linear-gradient(170deg, $pink 5%, $purple 80%);
+                background-clip: text;
+                color: transparent;
+                opacity: 0;
+                transition: opacity 250ms;
+            }
+            &:hover{
+                .menu_title_like--filled{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+.footer{    /* Partie Footer */
+    flex-direction: column;
+    padding: 30px 0 30px 25px;
+    color: $white;
+    background-color: darken($grey, 50%);
+    font-size: map-get($font_size, text);
+    &_title{
+        margin: 0 0 20px 0;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: map-get($font_size, footer-title);
+    }
+    &_list{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 5px;
+        list-style-type: none;
+        font-size: map-get($font_size, footer-text);
+        &_elem{
+            &_icn{
+                width: 25px;
+                font-size: map-get($font_size, foooter-icn);
+            }
+            &_link{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}

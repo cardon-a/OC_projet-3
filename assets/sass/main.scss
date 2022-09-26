@@ -220,8 +220,6 @@ body{
             }
             &_btn{
                 font-size: map-get($font_size, icn);
-                background-color: $white;
-                border: none;
                 height: 30px;
                 width: 30px;
                 margin-right: 20px;
