@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+.underline {
+  text-decoration: underline #99E2D0 4px;
+  text-underline-offset: 10px;
+}
+
 .header { /* Partie Header */
   position: relative;
   justify-content: center;
@@ -38,6 +43,7 @@ body {
   border-top-right-radius: 30px;
   position: relative;
   top: -40px;
+  margin-bottom: -40px;
 }
 .menu_img {
   width: 100%;
@@ -76,6 +82,93 @@ body {
 .menu_title_like:hover .menu_title_like--filled {
   opacity: 1;
 }
+.menu_entree, .menu_dish, .menu_dessert {
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.menu_entree_title, .menu_dish_title, .menu_dessert_title {
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+.menu_btn {
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #FF79DA 5%, #9356DC 80%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px #b5b5b5;
+  font-size: 25px;
+  color: #fff;
+  padding: 25px;
+  transition: box-shadow 250ms;
+  margin: 50px 0 70px 0;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+}
+.menu_btn:hover {
+  box-shadow: 0 5px 10px #828282;
+  background-image: linear-gradient(170deg, #ff93e1 5%, #a16be0 80%);
+}
+
+.card {
+  box-shadow: 0 5px 10px #b5b5b5;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card_text {
+  min-width: 0;
+}
+.card_text_entitled {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.card_text_subtitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_right {
+  align-items: center;
+}
+.card_right_price {
+  margin: 40px 10px 0 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 23px;
+}
+.card_right_confirmation {
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 0px;
+  background-color: #ade8d9;
+  color: #fff;
+  transition-duration: 0.6s;
+}
+.card_right_confirmation_icn {
+  transform: rotate(180deg);
+  transition-duration: 0.6s;
+}
+.card:hover .card_right_confirmation {
+  width: 80px;
+}
+.card:hover .card_right_confirmation_icn {
+  transform: rotate(0deg);
+}
 
 .footer { /* Partie Footer */
   flex-direction: column;
@@ -87,7 +180,7 @@ body {
 .footer_title {
   margin: 0 0 20px 0;
   font-family: "Shrikhand", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 }
 .footer_list {
   flex-direction: column;

@@ -1,5 +1,5 @@
 @import "./common/variables";
-@import "./common/buttons";
+@import "./common/mixins";
 @import "./common/animations";
 
 html{
@@ -270,7 +270,7 @@ body{
         &_elem{
             &_icn{
                 width: 25px;
-                font-size: map-get($font_size, foooter-icn);
+                font-size: map-get($font_size, footer-icn);
             }
             &_link{
                 text-decoration: none;
