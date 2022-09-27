@@ -1,5 +1,38 @@
 @charset "UTF-8";
 /* Déclaration des couleurs */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation_inv {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes loader {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
 html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -120,6 +153,8 @@ body {
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
 .card_text {
   min-width: 0;
@@ -168,6 +203,18 @@ body {
 }
 .card:hover .card_right_confirmation_icn {
   transform: rotate(0deg);
+}
+
+.appear1 {
+  animation-delay: 0.3s;
+}
+
+.appear2 {
+  animation-delay: 0.6s;
+}
+
+.appear3 {
+  animation-delay: 0.8s;
 }
 
 .footer { /* Partie Footer */
