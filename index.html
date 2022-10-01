@@ -33,14 +33,16 @@
             <p class="location_text">Paris, Belleville</p>
         </div>
         <div class="explore flex">
-            <h2 class="explore_title">Réservez le menu qui<br> vous convient</h2>
-            <p class="explore_text">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
+            <div class="explore_text">
+                <h2 class="explore_text_title">Réservez le menu qui<br> vous convient</h2>
+                <p class="explore_text_subtitle">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
+            </div>
             <a href="#restaurant" class="explore_btn">
                 Explorer nos restaurants
             </a>
         </div>
+        <h2 class="function_title">Fonctionnement</h2>
         <div class="function flex">
-            <h2 class="function_title">Fonctionnement</h2>
             <div class="function_card flex">
                 <span class="function_card_num">1</span>
                 <i class="fa-solid fa-mobile-screen-button function_card_icn"></i>
@@ -59,60 +61,62 @@
         </div>
         <div class="restaurant flex" id="restaurant">
             <h2 class="restaurant_title">Restaurants</h2>
-            <a href="./menu-la_palette_du_gout.html" class="restaurant_card flex">
-                <img class="restaurant_card_img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette avec une présentation soignée">
-                <span class="restaurant_card_new">Nouveau</span>
-                <div class="restaurant_card_text flex">
-                    <div>                    
-                        <h3 class="restaurant_card_text_title">La palette du gout</h3>
-                        <p class="restaurant_card_text_location">Ménilmontant</p>
+            <div class="restaurant_cards flex">
+                <a href="./menu-la_palette_du_gout.html" class="restaurant_card flex">
+                    <img class="restaurant_card_img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette avec une présentation soignée">
+                    <div class="restaurant_card_new">Nouveau</div>
+                    <div class="restaurant_card_text flex">
+                        <div>                    
+                            <h3 class="restaurant_card_text_title">La palette du gout</h3>
+                            <p class="restaurant_card_text_location">Ménilmontant</p>
+                        </div>
+                        <div class="restaurant_card_text_btn">
+                            <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
+                            <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                        </div>
                     </div>
-                    <div class="restaurant_card_text_btn">
-                        <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
-                        <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                </a>
+                <a href="./menu-la_note_enchantee.html" class="restaurant_card flex">
+                    <img class="restaurant_card_img" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une assiette aecc une belle présentation très épurée">
+                    <span class="restaurant_card_new">Nouveau</span>
+                    <div class="restaurant_card_text flex">
+                        <div>
+                            <h3 class="restaurant_card_text_title">La note enchantée</h3>
+                            <p class="restaurant_card_text_location">Charonne</p>
+                        </div>
+                        <div class="restaurant_card_text_btn">
+                            <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
+                            <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="./menu-la_note_enchantee.html" class="restaurant_card flex">
-                <img class="restaurant_card_img" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une assiette aecc une belle présentation très épurée">
-                <span class="restaurant_card_new">Nouveau</span>
-                <div class="restaurant_card_text flex">
-                    <div>
-                        <h3 class="restaurant_card_text_title">La note enchantée</h3>
-                        <p class="restaurant_card_text_location">Charonne</p>
+                </a>
+                <a href="./menu-a_la_francaise.html" class="restaurant_card flex">
+                    <img class="restaurant_card_img" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiette contenant un dessert">
+                    <div class="restaurant_card_text flex">
+                        <div>
+                            <h3 class="restaurant_card_text_title">À la française</h3>
+                            <p class="restaurant_card_text_location">Cité Rouge</p>
+                        </div>
+                        <div class="restaurant_card_text_btn">
+                            <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
+                            <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                        </div>
                     </div>
-                    <div class="restaurant_card_text_btn">
-                        <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
-                        <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                </a>
+                <a href="./menu-le_delice_des_sens.html" class="restaurant_card flex">
+                    <img class="restaurant_card_img" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'une assiette avec une présentation originale">
+                    <div class="restaurant_card_text flex">
+                        <div>
+                            <h3 class="restaurant_card_text_title">Le délice des sens</h3>
+                            <p class="restaurant_card_text_location">Folie-Méricourt</p>
+                        </div>
+                        <div class="restaurant_card_text_btn">
+                            <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
+                            <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="./menu-a_la_francaise.html" class="restaurant_card flex">
-                <img class="restaurant_card_img" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiette contenant un dessert">
-                <div class="restaurant_card_text flex">
-                    <div>
-                        <h3 class="restaurant_card_text_title">À la française</h3>
-                        <p class="restaurant_card_text_location">Cité Rouge</p>
-                    </div>
-                    <div class="restaurant_card_text_btn">
-                        <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
-                        <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="./menu-le_delice_des_sens.html" class="restaurant_card flex">
-                <img class="restaurant_card_img" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'une assiette avec une présentation originale">
-                <div class="restaurant_card_text flex">
-                    <div>
-                        <h3 class="restaurant_card_text_title">Le délice des sens</h3>
-                        <p class="restaurant_card_text_location">Folie-Méricourt</p>
-                    </div>
-                    <div class="restaurant_card_text_btn">
-                        <i class="fa-regular fa-heart restaurant_card_text_btn--empty"></i>
-                        <i class="fa-solid fa-heart restaurant_card_text_btn--filled"></i>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div> 
         </div>
 
         <footer class="footer flex">
