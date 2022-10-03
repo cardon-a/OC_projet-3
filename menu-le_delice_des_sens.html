@@ -3,7 +3,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-cale=1.0">
-        <link rel="stylesheet" href="assets/css/menu.css" />
+        <link rel="stylesheet" href="assets/css/prefixed/menu.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -12,7 +12,169 @@
     </head>
 
     <body>
-        
+        <header class="header flex">
+            <a href="index.html" class="header_btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <img src="./assets/images/logo/ohmyfood.png" alt="Logo d'Ohmyfood" class="header_img">   
+        </header>
+        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiette contenant un dessert" class="menu_img">
+        <div  class="menu flex">
+            <div class="menu_title flex">
+                <h2 class="menu_title_text">Le délice de sens</h2>
+                <div class="menu_title_like">
+                    <i class="fa-regular fa-heart menu_title_like--empty"></i>
+                    <i class="fa-solid fa-heart menu_title_like--filled"></i>
+                </div>
+            </div>
+            <div class="menu_cards flex">
+                <div class="menu_entree flex">
+                    <h3 class="menu_entree_title"><span class="underline">Entr</span>ées</h3>
+                    <div class="card appear1 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Tartare de thon</p>
+                            <p class="card_text_subtitle">Assaisonné au yuzu</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">25€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear1 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Bouchée de homard croustillant</p>
+                            <p class="card_text_subtitle">Et sa farandole de petits légumes</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">35€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear1 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Velouté de cèpes</p>
+                            <p class="card_text_subtitle">Aux truffes</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">20€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_dish flex">
+                    <h3 class="menu_dish_title"><span class="underline">Plat</span>s</h3>
+                    <div class="card appear2 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Poulet rôti aux herbes de Provence</p>
+                            <p class="card_text_subtitle">Et sa crème de truffe</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">40€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear2 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Langouste rôtie</p>
+                            <p class="card_text_subtitle">Et ses légumes de saison</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">35€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear2 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Côte de boeuf Angus</p>
+                            <p class="card_text_subtitle">Et sa purée de panais</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">44€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_entree flex">
+                    <h3 class="menu_entree_title"><span class="underline">Dess</span>erts</h3>
+                    <div class="card appear3 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Farandole de desserts</p>
+                            <p class="card_text_subtitle">Du chef</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">18€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear3 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Crème brulée</p>
+                            <p class="card_text_subtitle">Revisitée</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">22€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card appear3 flex">
+                        <div class="card_text">
+                            <p class="card_text_entitled">Tiramisu</p>
+                            <p class="card_text_subtitle">À la noisette</p>
+                        </div>
+                        <div class="card_right flex">
+                            <p class="card_right_price">23€</p>
+                            <div class="card_right_confirmation flex">
+                                <i class="fa-sharp fa-solid fa-circle-check card_right_confirmation_icn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_btn">Commander</div>
+        </div>
+        <footer class="footer flex">
+            <h3 class="footer_title">ohmyfood</h3>
+            <ul class="footer_list flex">
+                <li class="footer_list_elem">
+                    <a href="#" class="footer_list_elem_link">
+                        <i class="fa-solid fa-utensils footer_list_elem_icn"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li class="footer_list_elem">
+                    <a href="#" class="footer_list_elem_link">
+                        <i class="fa-solid fa-handshake-angle footer_list_elem_icn"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li class="footer_list_elem">
+                    <a href="#" class="footer_list_elem_link">
+                        Mentions légales
+                    </a>
+                </li>
+                <li class="footer_list_elem">
+                    <a href="mailto:contact@ohmyfood.com" class="footer_list_elem_link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </body>
 
 </html>
